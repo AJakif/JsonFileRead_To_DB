@@ -37,6 +37,14 @@ namespace Test.Controllers
             return Json(new{massege = "Failed"});
         }
 
+        [Route("/api/GetImageFromMobile")]
+        [HttpPost]
+        public JsonResult SendImage()
+        {
+
+            return Json(new { });
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
